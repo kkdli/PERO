@@ -1,0 +1,41 @@
+name: 问题反馈 / Bug report
+description: 描述使用 PERO 时遇到的问题 / Report a problem with PERO
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请勿在公开问题中填写账号凭据、个人资料或未经检查的完整日志。
+        Thanks for your feedback. Please leave out credentials, personal information, and unreviewed full logs.
+  - type: input
+    id: version
+    attributes:
+      label: PERO 版本 / PERO version
+      placeholder: 版本号与构建号 / Version and build number
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 设备与系统 / Device and system
+      placeholder: iPhone / iPad, iOS / iPadOS version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 使用场景与复现步骤 / Context and steps to reproduce
+      description: 当时在做什么？怎样可以再次遇到这个问题？ / What were you doing, and how can the issue be reproduced?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期与实际表现 / Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 补充信息 / Additional context
+      description: 可附上已隐藏个人信息的截图或录屏。 / Screenshots or recordings with personal information removed are welcome.
